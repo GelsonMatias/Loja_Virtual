@@ -1,0 +1,130 @@
+
+/*Tamanho padrão para tabler*/
+@media (max-width: 758px){
+
+}
+/*Tamanho padrão para celular 480px*/
+@media (max-width: 480px){
+
+    #content-login-baner{
+        position: relative;
+        height: 110px;
+    }
+
+    #content-login-baner .nav-search{
+        position: relative;
+        width: 100%;
+        z-index: 0;
+    }
+    .nav-search .input-group{
+        position: absolute;
+        width: 95%;
+        left: 9px;
+        top: 63px;
+    }
+    #content-login-baner .nav-search ul{
+        position: absolute;
+        left: 1px;
+        top: 35px;
+        padding: 0;
+    }
+    #content-login-baner .nav-search li{
+        display: inline-block;
+        margin: 0 11px;
+    }
+
+    #content-login-baner .logotipo{
+        position: absolute;
+        top: -5px;
+        right: 7px;
+    }
+    #content-login-baner .nav-search li a, 
+    #content-login-baner .nav-search li a span{
+        color: #007bff;
+    }
+
+/*==========================================Menu Bar=============================*/
+    header .botao{
+        position: relative;
+    }
+    header .botao #menu-bar{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        left: 2px;
+        top: -2px;
+        color: #007bff;
+        z-index: 3;
+        font-size: 31px;
+        outline: none;
+    }
+    
+    header.open-menu .botao #menu-bar{
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        left: 2px;
+        top: -2px;
+        color: #007bff;
+        z-index: 3;
+        font-size: 31px;
+        outline: none;
+    }
+    header #menu-bar{
+        display: block;
+    }
+    header #menu-mobile{
+        position: fixed;
+        top: 40px;
+        background-color: #fff;
+        width: 80%;
+        height: 100%;
+        left: -80%;
+        transition: 1s;
+        z-index: 2;
+    }
+    header.open-menu #menu-mobile{
+        left: 0;
+    }
+
+    header.open-menu #menu-mobile-mask{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 1;
+    }
+    header.open-menu #menu-mobile h2{
+        text-align: center;
+        padding: 0;
+        font-family: 'BalooTamma2';
+        padding-top: 11px;
+        color: #fff;
+        background: #d6aa01;
+        margin-bottom: 0;
+    }
+    header.open-menu #menu-mobile ul{
+        list-style: none;
+        padding: 0;
+    }
+    header.open-menu #menu-mobile li{
+        border-bottom: 1px solid #d6aa01;
+        text-align: center;
+    }
+    header.open-menu #menu-mobile li:first-child{
+        border-top: 1px solid #d6aa01;
+    }
+    header.open-menu #menu-mobile li a{
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'BalooTamma2';
+        color: #007bff;
+        text-decoration: none;
+        display: block;
+    }
+
+/*=====================================Seção do layout Section=======================================*/
+}

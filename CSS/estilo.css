@@ -1,0 +1,314 @@
+@font-face{/*adicionar font Open-Sans*/
+    font-family: 'OpenSans';
+    src: url(../lib/fonts/Open-Sans/OpenSans-Light.ttf);
+    font-size: 1em;
+}
+@font-face{/*adicionar font Open-Sans*/
+    font-family: 'OpenSans';
+    src: url(../lib/fonts/Open-Sans/OpenSans-Regular.ttf);
+    font-size: 1em;
+}
+@font-face{/*adicionar font Open-Sans*/
+    font-family: 'BalooTamma2';
+    src: url(../lib/fonts/Open-Sans/BalooTamma2-Regular.ttf);
+    font-size: 1em;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: #d6aa01;
+    
+}
+#content-login-baner{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 16px;
+}
+#content-login-baner img{
+    margin-top: 10px;
+    margin-left: 68px;
+}
+#content-login-baner .nav-search{
+    width: 503px;
+    float: right;
+    position: relative;
+}
+.nav-search .input-group{
+    width: 77%;
+    position: absolute;
+    left: -81px;
+    top: 11px;
+}
+#content-login-baner .nav-search ul{
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+#content-login-baner .nav-search li{
+    display: inline-block;
+    margin-right: 15px;
+}
+#content-login-baner .nav-search li a span{
+    display: inline-block;
+    margin-right: 5px;
+    color: #fff;
+}
+#content-login-baner .nav-search li a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'OpenSans';
+}
+#content-login-baner .nav-search .btn{
+    color: #fff;
+    background-color: #007bff;
+}
+#content-login-baner .nav-search li:hover{
+    color:#007bff
+}
+/*menu descrição dos menu*/
+.container nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+.container nav li{
+    display: inline-block;
+    border-right: 2px solid #fff;
+    padding: 0 8px;
+}
+.container nav li:last-child{
+    border-right: none;
+}
+.container nav li a{
+    display: block;
+    text-decoration: none;
+    font-family: 'BalooTamma2';
+    text-transform: uppercase;
+    color: #fff;
+}
+.container nav li a:hover{
+    color:#007bff
+}
+header.open-menu .bar-close{
+    position: absolute;
+    bottom: 40px;
+    height: 40;
+    background-color: #d6aa01;
+    width: 100%;
+}
+header.open-menu .bar-close .btn-close{
+    border: none;
+    color: #fff;
+    background: none;
+}
+/*====================================Estilizando dis Login e Cadastro============================*/
+/*Estilizando a Div do Login*/
+header #cadastro{
+    position: fixed;
+    top: 60px;
+    width: 40%;
+    background-color: rgba(214, 170, 1,.8);
+    right: -40%;
+    transition: 1s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 3;
+}
+header.menu-open #cadastro{
+    right: 0;
+}
+header .container form{
+    padding-top: 10px;
+    
+}/*Estilizando Botões Login*/
+header .row-cadastro-btn{
+    margin-bottom: 8px;
+}
+header .container .btn-login{
+    border: none;
+    background: #fff;
+    width: 35%;
+    margin-left: 17px;
+    font-weight: bold;
+    color: #007bff;
+    font-family: 'BalooTamma2';
+}
+header .container .btn-cadastrar{
+    margin-left: 19px;
+    border: none;
+    background: #fff;
+    width: 37%;
+    margin-left: 29px;
+    font-weight: bold;
+    color: #007bff;
+    font-family: 'BalooTamma2';
+}/*Fim Estilizando Login*/
+/*******=====================================  =*********//*Estilizando Div do Registro*/
+header #register{
+    position: fixed;
+    right: -40%;
+    top: 222px;
+    width: 40%;
+    background-color: rgba(214, 170, 1,.8);
+    transition: 1.5s;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    z-index: 2;
+}
+header.menu-register #register{
+    right: 0%;
+}
+header #register h2{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    font-family: 'BalooTamma2';
+}
+header #register form #name_A,
+header #register form #name_B,
+header #register form #celphone{
+    margin-bottom: 10px;
+}
+header #register form label{
+    color: #fff;
+}
+header #register form .btn{
+    margin-bottom: 10px;
+    width: 131px;
+}/*Fim da Estilização da Div do Registro*/
+
+/*===============================Seção do layout Section=============================*/
+#baner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    /* border: 1px solid red; */
+}
+#baner .item .item-inner img{
+   width: 100%;
+}
+/*=====================Tabela de Preço=================================*/
+.container-acid{
+    margin: 0 auto;
+}
+.section-preco{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* padding: 5px; */
+    margin-top: 10px;
+}
+.section-md{
+    width: 235px;
+    border: 1px solid rgba(224, 183, 16, .3);
+    padding: 17px;
+    margin: 3px auto;
+}
+.section-md .image img{
+    width: 100%;
+}
+.section-md .image{
+    width: 70%;
+    margin-left: 13%;
+    padding: 7px;
+    /* border: rgba(153, 153, 143,.2) 1px solid; */
+
+}
+.section-md a{
+    text-decoration: none;
+}
+/*=========================Descrições dos produtos=============================*/
+.section-md .estrelas{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.section-md h4{
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-family: 'BalooTamma2';
+}
+.section-md .preco{
+    font-family: 'BalooTamma2';
+    color: #d6aa01;
+}
+.section-md .frete{
+    font-family: 'BalooTamma2';
+    color: #04d483;
+}
+.section-md .credito{
+    font-family: 'BalooTamma2';
+    color: #d6aa01;
+    position: relative;
+    margin-bottom: -15px;
+}
+.section-md .credito .icon-credit-card{
+   position: absolute;
+   top: 3px;
+   left: 86px
+}
+/*======================================Novidades do mês==============================*/
+.container-novidades{
+    width: 366px;
+    border: 1px solid #007bff;
+    height: 150px;
+    margin: 0 auto;
+}
+.novidades{
+    margin: 15px;
+    border: #04d483 1px solid;
+    padding: 10px 0;
+}
+.promocoes{
+    padding: 5px;
+}
+.promocoes h5{
+    text-align: center;
+    font-family: 'BalooTamma2';
+    color: #007bff;
+    margin-top: 8px;
+    margin-bottom: 1px;
+    padding: 3px;
+}
+.promocoes hr{
+    width: 183px;
+    margin: 2px auto;
+    border: 1px solid #d6aa01;
+    margin-bottom: 5px;
+}
+.promocoes a{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    padding: 5px 43px;
+    margin: 20px auto;
+    margin-left: 16px;
+    font-family: 'BalooTamma2';
+    font-weight: 600;
+}
+.promocoes #homem{
+    background-color: rgba(214, 170, 1, .8);
+    color: #111;
+    border-radius: 8px;
+}
+.promocoes #mulher{
+    background-color: rgba(214, 170, 1, .8);
+    color: #111;
+    border-radius: 8px;
+}
+.promocoes #homem:hover{
+    background-color: #007bff;
+    color: #fff;
+    transition: 1s;
+}
+.promocoes #mulher:hover{
+    background-color: #ff0080;
+    color: #fff;
+    transition: 1s;
+}

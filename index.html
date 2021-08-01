@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziela</title>
+
+    <link rel="stylesheet" href="lib/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="lib/fonts/Icomoon/style.css">
+    <link rel="stylesheet" href="lib/raty/lib/jquery.raty.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+</head>
+<body>
+<!-----------------------------------------------Header-------------------------------------------------->   
+  
+    <header>
+<!---------------------------------Start Menu Mobile------------------------------------->
+        <div class="botao">
+            <button type="button" id="menu-bar" class="d-block d-sm-none"><span class="icon-menu"></span></button>
+        </div>
+
+        <div id="menu-mobile-mask" class="d-block d-sm-none"></div>
+
+        <div id="menu-mobile" class="d-block d-sm-none">
+
+            <h2>Aziela</h2>
+
+            <ul>
+                <li><a href="">Vestidos</a></li>
+                <li><a href="">Blusas</a></li>
+                <li><a href="">Roupa de banho</a></li>
+                <li><a href="">Plus size</a></li>
+                <li><a href="">Cozinha</a></li>
+                <li><a href="">Cama & Banho</a></li>
+                <li><a href="">Sapatos</a></li>
+            </ul>
+
+            <div class="bar-close">
+                <button type="button" class="btn btn-close"><span class="icon-cross"></span></button>
+            </div>
+        </div>
+<!-------------------------------------end Menu Mobile-------------------------------->
+
+        <div id="content-login-baner">
+            <a href="" class="logo"><img src="image/logo.png" alt="logotipo" class="logotipo"></a>
+
+            <nav class="nav-search">
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                    <button class="btn" type="button"><span class="icon-search"></span></button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                </div>
+
+                <ul>
+                    <li id="login"><a type="button"><span class="icon-user"></span>Login</a></li>
+                    <li><a href="#"><span class="icon-cart"></span>Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container navegacao d-none d-sm-block">
+
+            <nav>
+                <ul>
+                    <li><a href="">Vestidos</a></li>
+                    <li><a href="">Blusas</a></li>
+                    <li><a href="">Roupa de banho</a></li>
+                    <li><a href="">Plus size</a></li>
+                    <li><a href="">Cozinha</a></li>
+                    <li><a href="">Cama & Banho</a></li>
+                    <li><a href="">Sapatos</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!----------------------Div Login---------------------------------->
+        <div id="cadastro">
+
+            <div class="container">
+
+                <form action="">
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+                        </div>
+                    </div>
+
+                    <div class="row row-cadastro-btn">
+                        <button type="button" class="btn btn-login">Login</button>
+                        <button type="button" class="btn btn-cadastrar" id="register-cadastro">Cadastrar?</button>
+                    </div>
+                    
+               </form>
+
+            </div>  
+
+        </div>
+        <!----------------------Div Cadastrar Registro---------------------------------->
+        <div class="container" id="register">
+
+            <h2>Cadastrar</h2>
+
+            <form>
+                <div class="form-row">
+                    <div class="col-6">
+                        <label for="name_A">Nome</label>
+                        <input type="text" class="form-control" placeholder="Nome" id="name_A" required>
+                    </div>
+                    <div class="col-6">
+                      <label for="name_B">Sobrenome</label>
+                      <input type="text" class="form-control" placeholder="Sobrenome" id="name_B" required>
+                    </div>
+                    <div class="col-md-6 celpho">
+                        <label for="celphone">Tel:</label>
+                        <input type="text" id="celphone" class="form-control" placeholder="(DDD) 998..." required>
+                    </div>
+                  </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Endereço</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Bairro, Rua Nº 123" required>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Complemento</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, studio, Casa" required>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Estado</label>
+                    <select id="inputState" class="form-control" required>
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">CEP</label>
+                    <input type="text" class="form-control" id="inputZip" required>
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </form>
+
+        </div>
+         <!---------------------Fim-Cadastrar Registro-------------------------------->
+
+    </header>
+<!-----------------------------------------------Section-------------------------------------------------->   
+
+    <section>
+<!------------------------------------------Banner---------------------------------------------->
+        <div class="row owl-carousel" id="baner">
+
+          <div class="item">
+            <div class="item-inner">
+              <a href="">
+                <img src="image/baner/full_banner_01ok.webp" alt="baner" class="baner-anchor">
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-inner">
+              <a href="">
+                <img src="image/baner/full_banner_01.webp" alt="baner" class="baner-anchor">
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-inner">
+              <a href="">
+                <img src="image/baner/full_banner_02ok.webp" alt="baner" class="baner-anchor">
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-inner">
+              <a href="">
+                <img src="image/baner/fashion_4.png" alt="baner" class="baner-anchor">
+              </a>
+            </div>
+          </div>
+
+        </div>
+<!-----------------------------------------Items a venda----------------------------------------------->
+        <div class="container container-acid">
+          <div class="section-preco row">
+            
+            <div class="section-md">
+              <a href="">
+                <img src="image/Roupas/almofada-gigante-animal-print-onc-a-mdecore-alg0055-2-jpg.jpg" alt="roupa" class="image">
+                <h4>Almofada gigante pra cama</h4>
+                <div class="estrelas"></div>
+                <div class="preco">178 R$</div>
+                <div class="frete"><span class="icon-truck"></span> Frete Grates</div>
+                <div class="credito"><span class="icon-credit-card"></span> 8X de 22,25</div>
+              </a>
+            </div>
+            <div class="section-md">
+              <a href="">
+                <img src="image/Roupas/0001 (4).jpg" alt="roupa" class="image">
+                <h4>Roupa de Cama Infantil para Inverno</h4>
+                <div class="estrelas"></div>
+                <div class="preco">49.99 R$</div>
+                <div class="frete"><span class="icon-truck"></span> Frete Grates</div>
+                <div class="credito"><span class="icon-credit-card"></span> 3X de 16,66</div>
+              </a>
+            </div>
+            <div class="section-md">
+              <a href="">
+                <img src="image/Roupas/0256.jpg" alt="roupa" class="image">
+                <h4>Moleton Scatchs Outono, Inverno</h4>
+                <div class="estrelas"></div>
+                <div class="preco">85.90 R$</div>
+                <div class="frete"><span class="icon-truck"></span> Frete Grates</div>
+                <div class="credito"><span class="icon-credit-card"></span> 5X de 17,18</div>
+              </a>
+            </div>
+            <div class="section-md">
+              <a href="">
+                <img src="image/Roupas/0002.jpg" alt="roupa" class="image">
+                <h4>Jeans Femenino Leve´s</h4>
+                <div class="estrelas"></div>
+                <div class="preco">69.99 R$</div>
+                <div class="frete"><span class="icon-truck"></span> Frete Grates</div>
+                <div class="credito"><span class="icon-credit-card"></span> 5X de 15</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+ <!-----------------------------------------Novidades do mês----------------------------------------------->
+        <div class="row novidades">
+          <div class="container-novidades">
+
+          </div>
+          <div class="container-novidades promocoes">
+            <h5>Promoções imperdiveis</h5>
+            <hr>
+            <a href="" id="homem">Homem</a>
+            <a href="" id="mulher">Mulher</a>
+
+          </div>
+          <div class="container-novidades">
+            
+          </div>
+        </div>
+
+    </section>
+<!-----------------------------------------------Footer-------------------------------------------------->   
+
+    <footer>
+
+    </footer>
+
+ <!-----------------------------------------------Script-------------------------------------------------->   
+    <script src="lib/assets/js/jquery-3.5.0.min.js"></script>
+    <script src="lib/assets/js/bootstrap.min.js"></script>
+    <script src="lib/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="lib/raty/lib/jquery.raty.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
