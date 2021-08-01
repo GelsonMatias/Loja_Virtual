@@ -1,3 +1,4 @@
+//primeiro comentário
 $(() =>{
     //abrir Menu Bar-------------
     $('#menu-bar').click(function(){
